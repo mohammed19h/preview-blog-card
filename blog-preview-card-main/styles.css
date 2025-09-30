@@ -1,0 +1,150 @@
+@import url(https://fonts.google.com/specimen/Figtree);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --black: hsl(0, 0%, 7%);
+    --grey: hsl(0, 0%, 42%);
+}
+
+body {
+    font-family: "Figtree";
+    background-color: var(--yellow);
+    height: 100vh;
+}
+
+main {
+    margin: auto;
+    padding: 16px;
+}
+
+article {
+    margin: 10em 29.6em 28em;
+    padding: 16px;
+    border: 1px solid var(--black);
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 8px 8px;
+}
+
+.blog img {
+    border-radius: 25px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    padding-bottom: 16px;
+}
+
+.btn {
+    padding: 10px 3px;
+}
+
+.btn button {
+    padding: 8px 20px;
+    background-color: var(--yellow);
+    border: 1px var(--black);
+    border-radius: 5px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn p {
+    padding: 10px 2px 3px 2px;
+    color: hsl(0, 0%, 7%);
+}
+
+.heading {
+    padding: 2px 16px 16px 2px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:active,
+a:visited,
+a:hover {
+    color: var(--yellow);
+}
+
+.para {
+    padding: 2px 16px 16px 2px;
+    color: var(--grey);
+    line-height: 1.4;
+}
+
+.person {
+    padding: 2px 1px 10px 2px;
+}
+
+.person h3 {
+    float: right;
+    padding: 20px;
+    padding-right: 8em;
+    font-weight: 600;
+}
+
+/*----- Mobile Version -----*/
+
+@media screen and (min-width: 412px) {
+
+    body {
+        height: 100vh
+    }
+
+    article {
+        margin: 10em auto;
+        padding: 16px;
+    }
+
+    .blog img {
+        width: 345px;
+    }
+
+    .para {
+        font-size: 18.5px;
+    }
+}
+
+/*----- Tablet Version -----*/
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        height: 100vh;
+    }
+
+    article {
+        margin: 5em 19.1em;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .btn p {
+        font-size: 17px;
+    }
+}
+
+
+/*----- Desktop Version -----*/
+
+@media screen and (min-width: 1400px) {
+
+    body {
+        height: 100vh;
+    }
+
+    article {
+        margin: 10em 32.1em;
+    }
+}
